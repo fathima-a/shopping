@@ -8,17 +8,14 @@
 <title>Seasons</title>
 </head>
 <body>
-	<c:forEach items="${seasons}" var="season">
+	<c:forEach items="${wears}" var="wear">
 		<table>
 			<tr>
-				<td>Id: <c:out value="${season.id}" /></td>
+				<td>Id: <c:out value="${wear.id}" /></td>
 			</tr>
 			<tr>
-				<td>Name: <c:out value="${season.name}" /> <a
-					href="seasons/<c:out value="${season.id}" />">Details</a></td>
-			</tr>
-			<tr>
-				<td><a href="seasons/<c:out value="${season.id}" />/wears">Wears</a></td>
+				<td>Name: <c:out value="${wear.name}" /> <a
+					href="/spring-mvc-maven/wears/<c:out value="${wear.id}" />/categories">categories</a></td>
 			</tr>
 		</table>
 	</c:forEach>

@@ -8,19 +8,16 @@
 <title>Seasons</title>
 </head>
 <body>
-	<c:forEach items="${seasons}" var="season">
+	<c:forEach items="${items}" var="item">
 		<table>
 			<tr>
-				<td>Id: <c:out value="${season.id}" /></td>
+				<td>Id: <c:out value="${item.id}" /></td>
 			</tr>
 			<tr>
-				<td>Name: <c:out value="${season.name}" /> <a
-					href="seasons/<c:out value="${season.id}" />">Details</a></td>
+				<td>Name: <c:out value="${item.name}" /> 
+				</td>
 			</tr>
-			<tr>
-				<td><a href="seasons/<c:out value="${season.id}" />/wears">Wears</a></td>
-			</tr>
-		</table>
+			</table>
 	</c:forEach>
 </body>
 </html>
