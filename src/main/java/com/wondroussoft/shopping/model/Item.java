@@ -9,21 +9,20 @@ public class Item {@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String name;
-	private Long wearId;
+	private int price;
+	private String size;
+	private Long categoryId;
 	
 
 	public Item() {
 	}
 
-	public Item(Long id, String name, Long wearId) {
+	public Item(Long id, String name, Long categoryId, int price, String size) {
 		this.id = id;
 		this.name = name;
-		this.wearId = wearId;
-	}
-
-	public void Wear(Long id, String name) {
-		this.id = id;
-		this.name = name;
+		this.price = price;
+		this.size = size;
+		this.categoryId = categoryId;
 	}
 
 	public Long getId() {
@@ -42,12 +41,28 @@ public class Item {@Id
 		this.name = name;
 	}
 
-	public Long getWearId() {
-		return wearId;
+	public Long getCategoryId() {
+		return categoryId;
 	}
 
-	public void setWearId(Long wearId) {
-		this.wearId = wearId;
+	public void setCategoryId(Long categoryId) {
+		this.categoryId = categoryId;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public String getSize() {
+		return size;
+	}
+
+	public void setSize(String size) {
+		this.size = size;
 	}
 
 	

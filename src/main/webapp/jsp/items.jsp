@@ -14,10 +14,13 @@
 				<td>Id: <c:out value="${item.id}" /></td>
 			</tr>
 			<tr>
-				<td>Name: <c:out value="${item.name}" /> 
+				<td>Name: <c:out value="${item.name}" />
 				</td>
 			</tr>
-			</table>
+			<tr>
+				<td><a href="/spring-mvc-maven/items/<c:out value="${item.id}" />">Details</a></td>
+			</tr>
+		</table>
 	</c:forEach>
 </body>
 </html>

@@ -21,11 +21,6 @@ public class Category {
 		this.WearId = WearId;
 	}
 
-	public void Wear(Long id, String name) {
-		this.id = id;
-		this.name = name;
-	}
-
 	public Long getId() {
 		return id;
 	}
