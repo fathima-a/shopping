@@ -34,7 +34,7 @@ public class ShoppingController {
 		seasons.add(season);
 
 		map.put("seasons", seasons);
-
+		
 		return "seasons";
 	}
 

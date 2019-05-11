@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Seasons</title>
+<title>Items</title>
 </head>
 <body>
 	<c:forEach items="${items}" var="item">
