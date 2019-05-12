@@ -4,10 +4,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style>
+a:hover, a:active {font-size: 150%;}
+</style>
 </head>
 <body>
-
+<center>
   <a href="seasons">Get all seasons</a>
-
+</center>
 </body>
 </html>
